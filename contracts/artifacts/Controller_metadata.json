@@ -1,0 +1,78 @@
+{
+	"compiler": {
+		"version": "0.8.11+commit.d7f03943"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_universityContractAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "universityContract",
+				"outputs": [
+					{
+						"internalType": "contract UniversityContract",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ControllerContract.sol": "Controller"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ControllerContract.sol": {
+			"keccak256": "0x45b62fa900ae0ff74c401177f26b65c0d565d92d7fbce5e13f3b759f8ca21f43",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://115fbcfd2c783f7f139d0e07f6202c64bad969fdf631e07c4ddf7ed87d06f11f",
+				"dweb:/ipfs/QmVcqAa2H3D2ksTG9cdroEfVGP1ewvvVj5AX3wRBnDWKyp"
+			]
+		},
+		"contracts/UniversityContract.sol": {
+			"keccak256": "0x53639dac3afb9b649c580cdc3069af1ccb29f9901bf3348d16641e026bf495a9",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://0e64e9a7ed5f99cfc6670513cd2cf8b99662999b4eec72528445d7ae7b6ac3d2",
+				"dweb:/ipfs/Qmdbc5q9CW98aCcWwKvhtK8iJ7HuVE4DeEARxfA7hphYvt"
+			]
+		}
+	},
+	"version": 1
+}

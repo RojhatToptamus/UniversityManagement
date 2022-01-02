@@ -1,0 +1,570 @@
+{
+	"compiler": {
+		"version": "0.8.11+commit.d7f03943"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_courseCode",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_facultyCode",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_courseName",
+						"type": "string"
+					}
+				],
+				"name": "_addCourse",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_facultyCode",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_departmentCode",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_departmentName",
+						"type": "string"
+					}
+				],
+				"name": "_addDepartment",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_facultyCode",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_facultyName",
+						"type": "string"
+					}
+				],
+				"name": "_addFaculty",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_studentAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_departmentId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_studentCode",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_studentName",
+						"type": "string"
+					}
+				],
+				"name": "_addStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_teacherAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_teacherCode",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "_addTeacher",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_studentCode",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_courseCode",
+						"type": "uint256"
+					}
+				],
+				"name": "_assignCoursesToStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_teacherCode",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_courseCode",
+						"type": "uint256"
+					}
+				],
+				"name": "_assignCoursesToTeacher",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_studentAddress",
+						"type": "address"
+					}
+				],
+				"name": "_getMyCourses",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_studentAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_courseCode",
+						"type": "uint256"
+					}
+				],
+				"name": "_getMyMarks",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_studentCode",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_courseCode",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_givenMark",
+						"type": "uint256"
+					}
+				],
+				"name": "_giveMark",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "courses",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "courseCode",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "departmentCode",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "courseName",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "departmentToFaculty",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "facultyCode",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "facultyName",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "departments",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "departmentCode",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "departmentName",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "faculties",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "facultyCode",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "facultyName",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "studentAddress",
+						"type": "address"
+					}
+				],
+				"name": "getAllMarks",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "courseCode",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "givenMark",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct UniversityContract.Mark[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "studentCourses",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "courseCode",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "departmentCode",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "courseName",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "studentIdtoAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "students",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "studentAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "studentCode",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "studentName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "departmentId",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "teacherCourses",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "teacherIdtoAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "teachers",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "teacherAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "teacherCode",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "teacherName",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/UniversityContract.sol": "UniversityContract"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/UniversityContract.sol": {
+			"keccak256": "0x53639dac3afb9b649c580cdc3069af1ccb29f9901bf3348d16641e026bf495a9",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://0e64e9a7ed5f99cfc6670513cd2cf8b99662999b4eec72528445d7ae7b6ac3d2",
+				"dweb:/ipfs/Qmdbc5q9CW98aCcWwKvhtK8iJ7HuVE4DeEARxfA7hphYvt"
+			]
+		}
+	},
+	"version": 1
+}
