@@ -184,30 +184,6 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_studentAddress",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_courseCode",
-						"type": "uint256"
-					}
-				],
-				"name": "_getMyMarks",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
 						"name": "_teacherAddress",
 						"type": "address"
 					},
@@ -563,11 +539,11 @@
 	},
 	"sources": {
 		"contracts/UniversityContract.sol": {
-			"keccak256": "0x1f2d27b28ffc9c4899d2fb1d5e386c98e151094c926660c0ecdb98a5a1a00a58",
+			"keccak256": "0x717d15d6a565068ef0f32fe913e7b85943dd2e75ac47b281117a41ed683177ca",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://a92af45d8e3bfa26ce84a9146a7abcacbce2232d7457213de76c9fdb0c9fbf61",
-				"dweb:/ipfs/QmNesdwk2AiAtjAztYb2isdnxgv9Do1xombSjs3hXet48v"
+				"bzz-raw://5c10660716946a67b9df84a450d09b16b545c80968f1dd62e5acc287b5979cb6",
+				"dweb:/ipfs/QmQwDcjNqkXyo2SdaNp9eejPvsp6otA7pVD2ix8BJrLFkF"
 			]
 		}
 	},

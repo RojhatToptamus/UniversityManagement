@@ -36,16 +36,6 @@ contract UniversityContract{
         _assignCoursesToStudent(124, 101);
         _assignCoursesToStudent(124, 103);
      
-
-        
-
-      /*
-        1) 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4  Owner
-        2) 0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2  Lecturer-1
-        3) 0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db   Lecturer-2
-        4) 0x78731D3Ca6b7E34aC0F824c42a7cC18A495cabaB  Student-1
-        5) 0x617F2E2fD72FD9D5503197092aC168c91465E7f2   Student-2
-      */
     } 
     modifier onlyOwner(){
            require(msg.sender == owner, "You are not authorized for this action!");
@@ -78,11 +68,7 @@ contract UniversityContract{
       
         
     }
-    function getAllMarks(address studentAddress)public view returns (Mark[] memory){
-        Student storage a = students[studentAddress];
-        return a.studentMarks;
-        
-    }
+
     struct Course{
         uint courseCode;
         uint departmentCode;
@@ -211,12 +197,11 @@ contract UniversityContract{
         
         return s.studentCourseMarks[_courseCode].givenMark;
     }
-    function _getMyMarks(address _studentAddress, uint _courseCode)external view returns(uint){
-        address studentAddress = _studentAddress;
-        Student storage s = students[studentAddress];
-        uint theMark = s.studentCourseMarks[_courseCode].givenMark;
-        return theMark;
-    }    
+    function getAllMarks(address studentAddress)public view returns (Mark[] memory){
+        Student storage a = students[studentAddress];
+        return a.studentMarks;
+        
+    }   
 
     function _getMyCourses(address _studentAddress) external view returns (string[] memory) {
         address studentAddress = _studentAddress;
