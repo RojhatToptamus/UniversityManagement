@@ -190,9 +190,10 @@ contract UniversityContract{
     }
 
     //external Functions
-    function _giveMark(uint _studentCode, uint _courseCode, uint _givenMark) external returns(uint){
+    function _giveMark(address _teacherAddress, uint _studentCode, uint _courseCode, uint _givenMark) external returns(uint){
+        address teacherAddress = _teacherAddress;
         //check if teacher is authorized to give mark
-        require(teacherCourses[msg.sender][_courseCode], "You are not authorized for this course!");
+        require(teacherCourses[teacherAddress][_courseCode], "You are not authorized for this course!");
 
         //check if student exist
         require(studentIdtoAddress[_studentCode] != address(0), "Student does not exist");

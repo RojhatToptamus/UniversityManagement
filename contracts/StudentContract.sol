@@ -4,7 +4,7 @@ pragma experimental ABIEncoderV2;
 import "./UniversityContract.sol";
 contract StudentContract {
     UniversityContract public universityContract;
-    address callerStudent;
+    
     constructor(address _universityContractAddress){
         universityContract = UniversityContract(_universityContractAddress);       
     }
@@ -14,8 +14,8 @@ contract StudentContract {
     }
 
     
-    function getAllMarks(address studentAddress)public view returns (UniversityContract.Mark[] memory){
-        studentAddress = msg.sender;
+    function getAllMarks()public view returns (UniversityContract.Mark[] memory){
+        address studentAddress = msg.sender;
         return universityContract.getAllMarks(studentAddress);
     }
 } 

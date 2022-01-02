@@ -66,11 +66,11 @@
 			]
 		},
 		"contracts/UniversityContract.sol": {
-			"keccak256": "0x53639dac3afb9b649c580cdc3069af1ccb29f9901bf3348d16641e026bf495a9",
+			"keccak256": "0x1f2d27b28ffc9c4899d2fb1d5e386c98e151094c926660c0ecdb98a5a1a00a58",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://0e64e9a7ed5f99cfc6670513cd2cf8b99662999b4eec72528445d7ae7b6ac3d2",
-				"dweb:/ipfs/Qmdbc5q9CW98aCcWwKvhtK8iJ7HuVE4DeEARxfA7hphYvt"
+				"bzz-raw://a92af45d8e3bfa26ce84a9146a7abcacbce2232d7457213de76c9fdb0c9fbf61",
+				"dweb:/ipfs/QmNesdwk2AiAtjAztYb2isdnxgv9Do1xombSjs3hXet48v"
 			]
 		}
 	},

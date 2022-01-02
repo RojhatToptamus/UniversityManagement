@@ -30,13 +30,7 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "studentAddress",
-						"type": "address"
-					}
-				],
+				"inputs": [],
 				"name": "getAllMarks",
 				"outputs": [
 					{
@@ -102,19 +96,19 @@
 	},
 	"sources": {
 		"contracts/StudentContract.sol": {
-			"keccak256": "0xc9ed6434d8e8f9db4474e571cbfc56d27b8a629cffe127da6ba49466ce0087e8",
+			"keccak256": "0x4d01e564d6795694577fcf4b6b2e3f9e7a480a28f88a5ffab11e17a6368e6ba4",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://2c5f4f0ed709731f63bc001cb99150cea35c274af4140c288db63ecd3fe7fe30",
-				"dweb:/ipfs/QmVjoVNp7q6Dp1nXfEK9szT6Ukp4YWvArZiLz492PMScCs"
+				"bzz-raw://009c338c94ed89a280f1083acdc60be5cb8d229560d327845b75548dc5c72b29",
+				"dweb:/ipfs/QmZPA27onsQfYzGmW2cYuWXwK6PVKFwmSZfPEXP9W7YikV"
 			]
 		},
 		"contracts/UniversityContract.sol": {
-			"keccak256": "0x53639dac3afb9b649c580cdc3069af1ccb29f9901bf3348d16641e026bf495a9",
+			"keccak256": "0x1f2d27b28ffc9c4899d2fb1d5e386c98e151094c926660c0ecdb98a5a1a00a58",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://0e64e9a7ed5f99cfc6670513cd2cf8b99662999b4eec72528445d7ae7b6ac3d2",
-				"dweb:/ipfs/Qmdbc5q9CW98aCcWwKvhtK8iJ7HuVE4DeEARxfA7hphYvt"
+				"bzz-raw://a92af45d8e3bfa26ce84a9146a7abcacbce2232d7457213de76c9fdb0c9fbf61",
+				"dweb:/ipfs/QmNesdwk2AiAtjAztYb2isdnxgv9Do1xombSjs3hXet48v"
 			]
 		}
 	},

@@ -4,13 +4,13 @@ pragma experimental ABIEncoderV2;
 import "./UniversityContract.sol";
 
 contract TeacherContract {
-    UniversityContract public universityContract;
-  
+    UniversityContract public universityContract; 
     constructor(address _universityContractAddress){
         universityContract = UniversityContract(_universityContractAddress);    
     }
- 
+    
     function _giveMark(uint _studentCode, uint _courseCode, uint _givenMark) public returns(uint){      
-        return universityContract._giveMark(_studentCode, _courseCode, _givenMark );
+        address _teacherAddress = msg.sender;
+        return universityContract._giveMark(_teacherAddress,_studentCode, _courseCode, _givenMark );
     }
 }

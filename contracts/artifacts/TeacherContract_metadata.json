@@ -87,19 +87,19 @@
 	},
 	"sources": {
 		"contracts/TeacherContract.sol": {
-			"keccak256": "0x7fcc3fa1332186e6cab6f99c2a743c82963f7466594ed271872add5941b86457",
+			"keccak256": "0x7531d66d1a6091f60af14088a6aa7ff81a634bf932ca04e23368950f824a293f",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://580accfc134d0254ef2f3d1552c5130de610169e7b65f80e8dd693c7138b892a",
-				"dweb:/ipfs/Qmbk3rkpdnVCoD8dVBbedfBAxmXDtE9EUR9Qvy3MU1xdQ9"
+				"bzz-raw://e57645aff198a619e5221c70ddc064809e4af23cd5078b816a55a53dc17632ac",
+				"dweb:/ipfs/QmTJFRH7dXXEYjcHnhPLkhYWo6R6PSzyqbBECW2x9jHD8C"
 			]
 		},
 		"contracts/UniversityContract.sol": {
-			"keccak256": "0x53639dac3afb9b649c580cdc3069af1ccb29f9901bf3348d16641e026bf495a9",
+			"keccak256": "0x1f2d27b28ffc9c4899d2fb1d5e386c98e151094c926660c0ecdb98a5a1a00a58",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://0e64e9a7ed5f99cfc6670513cd2cf8b99662999b4eec72528445d7ae7b6ac3d2",
-				"dweb:/ipfs/Qmdbc5q9CW98aCcWwKvhtK8iJ7HuVE4DeEARxfA7hphYvt"
+				"bzz-raw://a92af45d8e3bfa26ce84a9146a7abcacbce2232d7457213de76c9fdb0c9fbf61",
+				"dweb:/ipfs/QmNesdwk2AiAtjAztYb2isdnxgv9Do1xombSjs3hXet48v"
 			]
 		}
 	},
